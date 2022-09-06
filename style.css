@@ -1,4 +1,7 @@
 .naturale-products__section {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
    padding-top: 61px;
    padding-bottom: 66px;
 }
@@ -54,8 +57,8 @@ color: #000000 ;
    list-style-type: none;
    }
    
-   .naturale-products__item:not(:nth-child(3n)) {
-   margin-right:32px ;
+   .naturale-products__item:not(:last-child) {
+   margin: 0px 32px 0px 0px;
    }
 
    .naturale-products__section-discription{
@@ -153,9 +156,6 @@ color: #000000 ;
 
 /*------------BUTTON---------------*/
 
-.span{
-  
-}
 .box-card__button{
    width: 70px;
    height: 30px;
@@ -180,29 +180,37 @@ color: #000000 ;
    width: 50px;
 }
 
-/*------------MEDIA 0-479 mobilpx------------------*/
-@media(min-width: 0px) and (max-width: 479px){
+/*------------MEDIA 0-479 MOBIL------------------*/
+/*@media(min-width: 0px) and (max-width: 479px)*/
+@media (max-width: 767px){
    .naturale-products__section{
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 0 20px;
       padding-top: 60px;
       padding-bottom: 60px;
      }
      .naturale-products__container{
-        padding-right: 20px;
-        padding-left: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
      }
      .naturale-products__fon{
-       
-     
-        background-image: url(../ice-creame2/images/section-naturale/natural-fon.jpg);
+      height: 700px;
+      background-image: url(../ice-creame2/images/section-naturale/natural-fon.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: padding-box;
+      background-position: center;
      }
     .naturale-products__list{
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      
     }
-    .naturale-products__item:not(:nth-child(3n)){
-      margin-bottom:164px ;
+    .naturale-products__item:not(:last-child){
+      margin: 0px 0px 164px 0px;
    }
+ 
 
    /*-------------100%naturale text-----------------------*/
    .naturale-products__tittle {
@@ -254,14 +262,16 @@ color: #000000 ;
    }
    
    
-     
+   
 
 
 
-/*------------MEDIA 480-768px tablet------------------*/
-@media(min-width:480px) and (max-width: 768px){
+/*------------MEDIA 768px tablet------------------*/
+
+
+   @media(min-width:768px){
    .naturale-products__section{
-    padding-bottom: 82px;
+   padding-bottom: 82px;
    }
    .naturale-products__container{
       padding-right: 32px;
@@ -309,6 +319,7 @@ color: #000000 ;
    background-image: url(../ice-creame2/images/section-naturale/ice-cream-tablet.png);
    transform: translate(8%,-105%);  
 }
+
 .box-card-yellov::before{
    width: 199.34px;
    height: 196.85px; 
@@ -323,5 +334,162 @@ color: #000000 ;
    transform: translate(8%,-105%); 
 }
 }
+/*------------MEDIA 768-1200px tablet------------------*/
 
-
+@media(min-width:1200px){
+   .naturale-products__section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      padding-top: 61px;
+      padding-bottom: 66px;
+   } 
+   .naturale-products__container{
+      padding-left: 16px;
+      padding-right: 16px;
+      }
+      .naturale-products__fon{
+         width: 1200px;
+         height: 1050px;
+         background-color: 
+         rgba(132, 161, 120, 1);
+         background-image: url(../ice-creame2/images/section-naturale/natural-fon.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-clip: padding-box;
+         background-position: center;
+         }
+         /*---------100% naturale products------*/
+         .naturale-products__top-text {
+            display: inline;
+            text-align: center;
+         
+         }
+         
+         .naturale-products__tittle {
+         font-family: Montserrat;
+         font-weight: 800;
+         font-size: 30px;
+         line-height: 1.23;
+         letter-spacing: 0.04 em;
+         
+         color: #000000 ;
+         margin-bottom: 12px;
+         }
+         
+         .naturale-products__subtittle{
+         font-family: Seymour One ;
+         font-style:Book ;
+         font-weight: 400;
+         font-size: 36px;
+         line-height: 1.25;
+         letter-spacing: 0.06em;
+         
+         color: #000000 ;
+         }
+         /*--------------------------------------*/
+         .naturale-products__list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            }
+            
+            .naturale-products__item:not(:nth-child(3n)) {
+            margin-right:32px ;
+            }
+         
+            .naturale-products__section-discription{
+               padding-top: 303px;
+               }
+         
+            /*---------------BOX CARD----------------------*/
+         
+            .box-card__list{
+            display: inline;
+            text-align: center;
+            align-items: center; 
+            }   
+            .box-card__item{
+            list-style-type: none;
+            } 
+         
+            .box-card {
+            width: 370px;
+            border-radius: 24px;
+            padding-top: 166px;
+            padding-bottom: 60px;
+            background-color: 
+            rgba(174, 198, 165, 1); 
+            position: relative;
+            }
+            .box-card-green{
+               background-color: rgba(174, 198, 165, 1);
+            }
+            .box-card-green::before{
+            display: block;
+            content: "";
+            width: 302px;
+            height: 317px;
+            background-image: url(../ice-creame2/images/section-naturale/ice-cream.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            transform: translate(9%,-104%);
+              
+            }
+            .box-card-yellov{
+            background-color: rgba(239, 212, 120, 1);
+            }
+            .box-card-yellov::before{
+            display: block;
+            content: "";
+            width: 302px;
+            height: 317px;
+            background-image: url(../ice-creame2/images/section-naturale/coffee.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            transform: translate(9%,-104%);
+            }
+            
+            .box-card-red{
+            background-color: rgba(214, 147, 109, 1);
+            }
+            .box-card-red::before{
+            display: block;
+            content: "";
+            width: 302px;
+            height: 317px;
+            background-image: url(../ice-creame2/images/section-naturale/milkshakes.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            transform: translate(9%,-104%); 
+            }
+         
+         /*---------------BOX CARD TEXT-------------------------*/
+            .box-card__tittle{
+            font-family:Montserrat ;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 1.23;
+            letter-spacing: 0.04em;
+            margin-bottom: 65px;
+            
+            color: #131313;
+            }
+            .box-card__subtittle{
+            font-family:Montserrat ;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.75;
+            letter-spacing: 0.04em;
+         
+            margin-bottom: 60px;
+            height: 138px;
+            
+            color: #131313;
+         }
+           
+}
